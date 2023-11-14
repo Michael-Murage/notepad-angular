@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --light-gray: rgb(243 244 246);
+  --bg-blue-300: rgb(147, 197, 253);
+}
+body{
+  font-family: Helvetica;
+  background-color: var(--light-gray);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+}
+input[type="number"]::-moz-inner-spin-button,
+input[type="number"]::-moz-outer-spin-button {
+-moz-appearance: none;
+}
+input[type="number"]::-o-inner-spin-button,
+input[type="number"]::-o-outer-spin-button {
+-o-appearance: none;
+}
+input[type="number"]::inner-spin-button,
+input[type="number"]::outer-spin-button {
+appearance: none;
+}
+#search-component input {
+  padding: .5rem;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  display: block;
+}
+input {
+  padding-left: 1em !important;
+}
+input::placeholder {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.bold {
+  font-weight: 800;
+}
+.w-fit-content {
+  width: fit-content;
+}
+.h-fit-content {
+  height: fit-content;
+}
+.w-50{
+  width: 50%;
+}
+.h-50{
+  height: 50%;
+}
